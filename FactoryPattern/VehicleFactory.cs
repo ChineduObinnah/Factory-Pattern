@@ -11,7 +11,7 @@ namespace FactoryPattern
         public static IVehicle GetVehicle(string vehicleType)
         {
 
-            switch (vehicleType)
+            switch (vehicleType.ToLower())
             {
                 case "4":
                     return new Car();
